@@ -1,3 +1,13 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+#input-city {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
 #current-city { 
 	text-transform: capitalize;
 	font-family: 'Lato', sans-serif;
@@ -6,6 +16,11 @@
 }
 
 .current-city-info {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+button {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 }
