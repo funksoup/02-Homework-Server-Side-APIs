@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Dashboard</title>
+
+    <!-- link to fontawesome -->
+<!--     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- link to google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+
+	<!-- link to Materialize CSS library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- link to stylesheet -->
+	<link rel="stylesheet" href="./Assets/style.css" />
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+
+		<div class="col s12"><span class="flow-text">
+		Weather Dashboard
+		</span>
+		</div>
+
+    </div>
+
+
+    <div class="row">
+
+		<div class="col s3">
+			<p>Search for a city:<p>
+
+			<div id="input-area">
+				<input id="input-city"/>
+			</div>
+
+			<div id="button-area">
+			<button id="button-submit">Submit</button>
+			</div>
+
+			<div id="city-history">
+				
+			</div>
+
+       
+		</div>
+
+
+      <div class="col s9">
+
+      	<div id="current-city"></div>
+
+      	<div id="current-city-temp" class="current-city-info"></div>
+
+      	<div id="current-city-humid" class="current-city-info"></div>
+
+      	<div id="current-city-wind" class="current-city-info"></div>
+
+      	<div id="current-city-uv" class="current-city-info"></div>
+       
+      </div>
+
+    </div>
+
+
+	<!-- link to jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- link to Materialize CSS library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./Assets/script.js"></script>
+
+</div>
+</body>
+</html>
