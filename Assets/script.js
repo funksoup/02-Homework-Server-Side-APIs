@@ -5,6 +5,17 @@ var getHistory = JSON.parse(window.localStorage.getItem("userCityOld"));
 
 var userCityArray = getHistory || [];
 
+getMostRecentCity();
+
+function getMostRecentCity() {
+	for(var i=userCityArray.length; i>(userCityArray.length-5); i--) {
+		$(".city-array").each(function(index, obj) {
+			console.log(obj)
+			this.append(userCityArray[i]);
+			});
+	}
+};
+
 
 $("#button-submit").on("click", function(event) {
 
@@ -51,8 +62,6 @@ $("#button-submit").on("click", function(event) {
 
 	userCityArray.push(userCity);
 	console.log("userCityArray: ", userCityArray);
-
-	// getHistory.push(userCity);
 
 	
 	localStorage.setItem("userCityOld", JSON.stringify(userCityArray));

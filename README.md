@@ -4,6 +4,8 @@ A weather dashboard that runs in the browser and features dynamically updated HT
 
 The [OpenWeather API](https://openweathermap.org/api) is used to retrieve weather data for cities.
 
+Demo: https://funksoup.github.io/02-Homework-Server-Side-APIs/
+
 
 ## Tech/Framework Used
 
