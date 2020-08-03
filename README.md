@@ -18,11 +18,11 @@ Project is created with:
 
 ## Usage
 
-text tbd
+Enter a city in the Search field, click Submit and view current weather info, as well as a five-day forecast as well as a list of cities searched in the lefthand navigation area.
 
 The following image demonstrates the application functionality:
 
-image tbd
+<img src="/weather-dashboard-demo" width="600">
 
 
 ## Contributing
