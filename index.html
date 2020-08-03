@@ -1,114 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Weather Dashboard</title>
-
-    <!-- link to fontawesome -->
-<!--     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    /> -->
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- link to google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
-
-	<!-- link to Materialize CSS library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-	<!-- link to stylesheet -->
-	<link rel="stylesheet" href="./Assets/style.css" />
-
-</head>
-<body>
-
-<div class="container">
-
-    <div class="row">
-
-		<div class="col s12"><span class="flow-text">
-		Weather Dashboard
-		</span>
-		</div>
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header class="container-fluid text-center text-white bg-dark p-2">
+      <h2>Weather Dashboard</h2>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-lg-3">
+         <div class="row">
+           <div class="col col-lg-12 p-3 mb-2 bg-light text-dark">
+            <h3>Search for a City:</h3>
+            <input id="user-input" type="textarea" placeholder="Search"><button class="btn btn-primary" id="submit">Submit</button>
+            <table id="search-list">
+            </table>
+           </div>
+         </div>
+        </div>
+        <div class="col col-lg-9">
+          <div class="row">
+            <div class="col col-lg-12 border border-light rounded">
+              <table>
+                <tr>
+                  <td><h3>City:<span id="city"></span></span><span id="date"></span></h3></td>
+                  </tr>
+                  <tr>
+                    <td><p>Temperature:<span id="temp"></span>F</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Humidity:<span id="humidity"></span>%</p></td> 
+                  </tr>
+                  <tr>
+                    <td><p>Wind Speed:<span id="wind"></span>MPH</p></td> 
+                  </tr>
+                  <tr>
+                   <td><p>UV Index:<span id="uv"></span></p></td> 
+                  </tr>
+              </table>
+            </div>
+          </div>
+          <h4>5-Day Forecast:</h4>
+          <div class="row" id="five-day-forecast">
+            </div>
+            </div>
+        </div>
+      </div> 
     </div>
-
-
-    <div class="row">
-
-		<div class="col s3">
-			<p>Search for a city:<p>
-
-			<div id="input-area">
-				<input id="input-city"/>
-			</div>
-
-			<div id="button-area">
-			<button id="button-submit">Submit</button>
-			</div>
-
-			<div id="city-history">
-
-			<table id="city-history-table" class="responsive-table">
-		       
-		        <tbody>
-
-		       	<thead>
-		          <tr>
-		              <th></th>
-
-		          </tr>
-		        </thead>
-		          <tr>
-		            <td id="city-array-latest1" class="city-array"></td>
-		            
-		          </tr>
-		          <tr>
-		            <td id="city-array-latest2" class="city-array"></td>
-		           
-		          </tr>
-		          <tr>
-		            <td id="city-array-latest3" class="city-array"></td>
-		          </tr>
-					<tr>
-		            <td id="city-array-latest4" class="city-array"></td>
-		          </tr>
-		          <tr>
-		            <td id="city-array-latest5" class="city-array"></td>
-		          </tr>
-		        </tbody>
-		      </table>
-				
-			</div>
-
-       
-		</div>
-
-
-      <div class="col s9">
-
-      	<div id="current-city"></div>
-
-      	<div id="current-city-temp" class="current-city-info"></div>
-
-      	<div id="current-city-humid" class="current-city-info"></div>
-
-      	<div id="current-city-wind" class="current-city-info"></div>
-
-      	<div id="current-city-uv" class="current-city-info"></div>
-       
-      </div>
-
-    </div>
-
-
-	<!-- link to jQuery -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<!-- link to Materialize CSS library -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./Assets/script.js"></script>
-
-</div>
-</body>
+  </body>
 </html>

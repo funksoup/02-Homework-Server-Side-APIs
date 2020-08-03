@@ -1,4 +1,4 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Server-Side APIs: Weather Dashboard
 
 A weather dashboard that runs in the browser and features dynamically updated HTML and CSS.
 
@@ -11,7 +11,7 @@ Demo: https://funksoup.github.io/02-Homework-Server-Side-APIs/
 
 Project is created with:
 
-* Materialize CSS Library
+* Bootstrap CSS library
 * jQuery 3.4.1
 * JavaScript
 

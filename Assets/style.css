@@ -1,36 +1,21 @@
+header{
+    text-align: center;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 }
 
-#input-city {
-	text-transform: capitalize;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+.row{
+    margin: 5px;
+}
+    
+#users-list{
+    border: solid 1px black;
 }
 
-.city-array {
-	text-transform: capitalize;
-}
-
-#current-city { 
-	text-transform: capitalize;
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-
-}
-
-.current-city-info {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-}
-
-#city-history-table {
-	margin: 10px;
-	padding: 10px;
-}
-
-button {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+.card-body{
+    padding: 25px;
+    text-align: center;
 }
